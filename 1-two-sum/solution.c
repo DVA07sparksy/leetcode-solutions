@@ -1,4 +1,4 @@
-// 103 ms | 9.5 MB
+// 103 ms | 9.4 MB
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
@@ -10,7 +10,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
                 int* result = malloc(*returnSize * sizeof(int));
                 result[0] = i;
                 result[1] = j;
-                return result;//index of solution pair
+                return result;//indices of solutions
             }
         }
     }
