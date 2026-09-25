@@ -1,4 +1,4 @@
-// 83 ms | 12.1 MB
+// 79 ms | 12 MB
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
     int size =nums1Size + nums2Size;
     int temp[size];
@@ -7,10 +7,6 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
     }
     for (int i = 0; i < nums2Size; i++) {
         temp[i + nums1Size] = nums2[i];
-    }
-    double sum=0;
-    for(int i = 0; i < size; i++){
-       sum=sum+temp[i];
     }
     //sort
     for (int i = 0; i < size - 1; i++) {
